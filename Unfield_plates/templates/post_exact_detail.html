@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container">
+<div class="row">
+  <div class="col-md-8">
+    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+    </h3>
+
+    <article class="blog-post">
+      <h2 class="blog-post-title">{{ object.title }}</h2>
+      <p class="blog-post-meta">{{ now|date }}</p>
+
+      <p>{{ object.text }}</p>
+
+    </article>
+  </div>
+</div>
+
+</main>
+{% endblock %}
