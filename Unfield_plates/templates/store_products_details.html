@@ -1,13 +1,81 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="p-5 mb-4 bg-light rounded-3" lang='fa' >
-  <div class="container-fluid py-5">
-    <h1 class="display-5 fw-bold">{{ object.name }} </h1>
-    <h1 class="display-5 fw-bold">قیمت : {{ object.price }} </h1>
-    <p class="col-md-8 fs-4">شماره تماس : 09113742547</p>
+<!-- shop-details-area -->
+<section class="shop-details-area pt-90 pb-90">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="shop-details-content">
+          <h4 class="title">{{ object.name }}</h4>
+          <div class="shop-details-meta">
+            <ul>
+              <li>برند : <a href="shop.html">{{ object.brand }}</a></li>
+              <li>کد محصول : <span>{{ object.code }}</span></li>
+            </ul>
+          </div>
+          <div class="shop-details-price">
+            <h2 class="price">{{ object.price }}</h2>
+          </div>
+          <p>{{ object.main_text }}</p>
+          <div class="shop-details-list">
+            <ul>
+              <li>نوع : <span>{{ object.main_category }}</span></li>
+              <li>برند : <span>{{ object.brand }}</span></li>
+            </ul>
+          </div>
+          <div class="shop-perched-info">
+            <div class="sd-cart-wrap">
+              <form action="#">
+                <div class="cart-plus-minus">
+                  <input type="text" value="1">
+                </div>
+              </form>
+            </div>
+            <a href="#" class="btn">افزودن به سبد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="product-desc-wrap">
+          <ul class="nav nav-tabs" id="myTabTwo" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">جزئیات محصول</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="val-tab" data-toggle="tab" href="#val" role="tab" aria-controls="val" aria-selected="false">محصولات مشابه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">دیدگاه کاربران</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContentTwo">
+            <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+              <div class="product-desc-content">
+                <h4 class="title">جزئیات محصول</h4>
+                <div class="row">
+                  <div class="col-xl-9 col-md-7">
+                    <h5 class="small-title">توضیحات :</h5>
+                    <p>{{ object.main_text }}</p>
+                    <ul class="product-desc-list">
+                      <li>{{ object.category_1 }} : {{ object.category_1_answer }}</li>
+                      <li>{{ object.category_2 }} : {{ object.category_2_answer }}</li>
+                      <li>{{ object.category_3 }} : {{ object.category_3_answer }}</li>
+                      <li>{{ object.category_4 }} : {{ object.category_4_answer }}</li>
+                      <li>{{ object.category_5 }} : {{ object.category_5_answer }}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+<!-- shop-details-area-end -->
 
 {% endblock %}

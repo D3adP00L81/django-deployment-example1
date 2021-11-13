@@ -6,8 +6,13 @@ from django.utils import timezone
 
 class Post(models.Model):
     title = models.CharField(max_length=250)
-    text = models.TextField()
-    title_image = models.ImageField()
+    text1 = models.TextField()
+    text2 = models.TextField(blank=True,null=True)
+    middle_text = models.TextField(blank = True,null=True)
+    title_image1_main = models.ImageField()
+    title_image2 = models.ImageField(blank = True,null=True)
+    title_image3 = models.ImageField(blank = True,null=True)
+    title_image3 = models.ImageField(blank = True,null=True)
     create_date = models.DateTimeField(default=timezone.now())
     publish_date = models.DateTimeField(blank=True,null=True)
 

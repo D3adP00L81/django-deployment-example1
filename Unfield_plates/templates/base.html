@@ -32,39 +32,198 @@
       }
     </style>
 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
-    <!-- Custom styles for this template -->
-    <link href="{% static "css/carousel.rtl.css" %}" rel="stylesheet">
-  </head>
-  <body>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fashi Template">
+        <meta name="keywords" content="Fashi, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>قالب فروشگاهی فشی</title>
 
-  <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'account:home-page' %}"><img src="{% static 'images/home-logo.jpg' %}" alt="" style="width:50px;height:50px;"> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'blog:post-list' %}">اخبار</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'store:product-list' %}">فروشگاه</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'account:call-page' %}">تماس با ما</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="بحث">
-          <button class="btn btn-outline-danger" type="submit">جستجو</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <link href="{% static 'css/bootstrap.rtl.min.css' %}" rel="stylesheet">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+    </head>
+
+    <body>
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="header-top">
+                <div class="container">
+                    <div class="ht-right">
+                        <div class="mail-service">
+                            <i class=" fa fa-envelope"></i> example@gmail.com
+                        </div>
+                        <div class="phone-service">
+                            <i class=" fa fa-phone"></i>1234567890 98+
+                        </div>
+                    </div>
+                    <div class="ht-left">
+                        <a href="login.html" class="login-panel"><i class="fa fa-user"></i></a>
+
+                        <div class="top-social">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-linkedin"></i></a>
+                            <a href="#"><i class="ti-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="inner-header">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2">
+                            <div class="logo">
+                                <a href="{% url 'account:home-page' %}">
+                                    <img src="{% static 'images/home-logo.jpg' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7">
+                            <div class="advanced-search">
+                                <button type="button" class="category-btn">دسته ها</button>
+                                <div class="input-group">
+                                    <input type="text" placeholder="چه چیزی نیاز دارید؟">
+                                    <button type="button"><i class="ti-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-right col-md-3">
+                            <ul class="nav-right">
+                                <li class="heart-icon">
+                                    <a href="#">
+                                        <i class="icon_heart_alt"></i>
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li class="cart-icon">
+                                    <a href="#">
+                                        <i class="icon_bag_alt"></i>
+                                        <span>3</span>
+                                    </a>
+                                    <div class="cart-hover">
+                                        <div class="select-items">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="{% static 'images/select-product-1.jpg' %}" alt=""></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <p>60000 تومان </p>
+                                                                <h6>نام محصول در اینجا قرار می گیرد</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td class="si-close">
+                                                            <i class="ti-close"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="{% static 'images/select-product-2.jpg' %}" alt=""></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <p>60000 تومان </p>
+                                                                <h6>نام محصول در اینجا قرار می گیرد</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td class="si-close">
+                                                            <i class="ti-close"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="select-total">
+                                            <span>مبلغ کل :</span>
+                                            <h5>120000 تومان</h5>
+                                        </div>
+                                        <div class="select-button">
+                                            <a href="#" class="primary-btn view-card">مشاهده سبد </a>
+                                            <a href="#" class="primary-btn checkout-btn">پرداخت</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart-price">15000 تومان</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="container">
+                    <div class="nav-depart">
+                        <div class="depart-btn">
+                            <i class="ti-menu"></i>
+                            <span>همه بخش ها</span>
+                            <ul class="depart-hover">
+                                <li class="active"><a href="#">لباس زنانه</a></li>
+                                <li><a href="#">لباس مردانه</a></li>
+                                <li><a href="#">لباس زیر</a></li>
+                                <li><a href="#">لباس بچه گانه</a></li>
+                                <li><a href="#">برند مد</a></li>
+                                <li><a href="#">لوازم جانبی/کفش</a></li>
+                                <li><a href="#">برند های لاکچری</a></li>
+                                <li><a href="#">پوشاک مارک فضای باز</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="nav-menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="{% url 'store:product-list' %}">خانه</a></li>
+                            <li><a href="{% url 'store:product-list' %}">فروشگاه</a></li>
+                            <li><a href="#">مجموعه</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">مردانه</a></li>
+                                    <li><a href="#">زنانه</a></li>
+                                    <li><a href="#">بچه گانه</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'blog:post-list' %}">بلاگ</a></li>
+                            <li><a href="{% url 'account:call-page' %}">ارتباط با ما</a></li>
+                            <li><a href="#">صفحات</a>
+                                <ul class="dropdown">
+                                    <li><a href="./product.html">محصول</a></li>
+                                    <li><a href="./registe.html">عضویت</a></li>
+                                    <li><a href="./shopping-cart.html">سبد خرید</a></li>
+                                    <li><a href="./check-out.html">پرداخت</a></li>
+                                    <li><a href="{% url 'store:product-list' %}">فروشگاه</a></li>
+                                    <li><a href="{% url 'blog:post-list' %}">جزئیات بلاگ</a></li>
+                                    <li><a href="./faq.html">پرسش و پاسخ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
 
       <style>
         .bd-placeholder-img {
@@ -92,18 +251,142 @@
 {% block content %}
 
 {% endblock %}
-<!-- FOOTER -->
-<footer class="container">
-  <p class="float-end"> <a href="https://www.instagram.com/anfieldplating.ir/"> <img src="{% static 'images/instagram-logo.jpg' %}" alt="" style="width:50px;height:50px;"></a></p>
-  <p>&copy; 2021 Unfield Plates, Inc &middot; <button type="button" class="btn btn-outline-secondary"><a href="{% url 'account:call-page'%}">تماس با ما </a></button></p>
+<div class="partner-logo">
+    <div class="container">
+        <div class="logo-carousel owl-carousel">
+            <div class="logo-item">
+                <div class="tablecell-inner">
+                    <img src="{% static 'images/logo-carousel/logo-1.png' %}" alt="">
+                </div>
+            </div>
+            <div class="logo-item">
+                <div class="tablecell-inner">
+                    <img src="{% static 'images/logo-carousel/logo-2.png' %}" alt="">
+                </div>
+            </div>
+            <div class="logo-item">
+                <div class="tablecell-inner">
+                    <img src="{% static 'images/logo-carousel/logo-3.png' %}" alt="">
+                </div>
+            </div>
+            <div class="logo-item">
+                <div class="tablecell-inner">
+                    <img src="{% static 'images/logo-carousel/logo-4.png' %}" alt="">
+                </div>
+            </div>
+            <div class="logo-item">
+                <div class="tablecell-inner">
+                    <img src="{% static 'images/logo-carousel/logo-5.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Partner Logo Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="#"><img src="{% static 'images/footer-logo.png' %}" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>آدرس: شیراز، ایران</li>
+                        <li>تلفن: 1234567890 98+</li>
+                        <li>ایمیل: example@gmail.com</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-widget">
+                    <h5>اطلاعات</h5>
+                    <ul>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">پرداخت</a></li>
+                        <li><a href="{% url 'account:call-page' %}">ارتباط با ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <h5>حساب کاربری</h5>
+                    <ul>
+                        <li><a href="#">حساب کاربری</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                        <li><a href="#">سبد خرید</a></li>
+                        <li><a href="#">فروشگاه</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="newslatter-item">
+                    <h5>عضویت در خبرنامه</h5>
+                    <p>برای دریافت اخبار و اطلاعات تخفیفات عضو خبرنامه ما شوید.</p>
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="ایمیل خود را وارد کنید">
+                        <button type="button">عضویت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-reserved">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        حق نشر &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> تمام حقوق این قالب متعلق به <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="#" target="_blank">فشی است</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                    <div class="payment-pic">
+                        <img src="{% static 'images/payment-method.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-</main>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{% static 'js/vendor/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/ajax-form.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 
-  <script src="{% static "js/bootstrap.bundle.min.js"%}"></script>
-
-
-
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+        <script src="{% static 'js/jquery.dd.min.js' %}"></script>
+        <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+<!-- FOOTER -->
 
 </body>
 </html>

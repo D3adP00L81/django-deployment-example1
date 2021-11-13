@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'store',
     'blog',
     'account',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -84,7 +83,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -124,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
-MEIDA_ROOT = os.path.join(BASE_DIR,'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
 
 LOGIN_URL = ''

@@ -19,19 +19,27 @@ class ShippingAddress(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=300)
-    price = models.IntegerField()
-    discount = models.IntegerField(null=True)
+    brand = models.CharField(max_length=300,null=True)
+    price = models.IntegerField(null=True)
+    main_category = models.CharField(max_length=200,null=True)
+    main_text = models.TextField(null=True)
     category_1 = models.CharField(max_length=200,null=True)
+    category_1_answer = models.CharField(max_length=200,null=True)
     category_2 = models.CharField(max_length=200,null=True)
+    category_2_answer = models.CharField(max_length=200,null=True)
     category_3 = models.CharField(max_length=200,null=True)
+    category_3_answer = models.CharField(max_length=200,null=True)
     category_4 = models.CharField(max_length=200,null=True)
+    category_4_answer = models.CharField(max_length=200,null=True)
     category_5 = models.CharField(max_length=200,null=True)
+    category_5_answer = models.CharField(max_length=200,null=True)
     color = models.CharField(max_length=300,null=True)
-    last_price = models.IntegerField(null=True)
-
-    def get_discount(self):
-        self.last_price = (self.price - ((100 - self.discount)/100))
-        return self.last_price
+    main_image = models.ImageField(null=True)
+    image2 = models.ImageField(null=True)
+    image3 = models.ImageField(null=True)
+    image4 = models.ImageField(null=True)
+    image5 = models.ImageField(null=True)
+    code = models.CharField(max_length=6,unique=True,null=True)
 
 class OrderItem(models.Model):
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
