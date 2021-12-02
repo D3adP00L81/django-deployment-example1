@@ -1,530 +1,771 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-
-<!-- Hero Section Begin -->
-<section class="hero-section">
-    <div class="hero-items owl-carousel">
-        <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <span>کیف،بچه گانه</span>
-                        <h1>جمعه سیاه</h1>
-                        <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است.</p>
-                        <a href="#" class="primary-btn">خرید</a>
-                    </div>
-                </div>
-                <div class="off-card">
-                    <h2>تخفیف <span>50%</span></h2>
-                </div>
+<section class="slider-area" data-background="{% static "img/bg/slider_area_bg.jpg" %}">
+  <div class="container custom-container">
+    <div class="row">
+      <div class="col-7">
+        <div class="slider-active">
+          <div class="single-slider slider-bg" data-background="{% static "img/slider/slider_bg01.jpg" %}">
+            <div class="slider-content">
+              <h5 class="sub-title" data-animation="fadeInUp" data-delay=".2s">پیشنهاد ویژه !</h5>
+              <h2 class="title" data-animation="fadeInUp" data-delay=".4s">غذای ارگانیک</h2>
+              <p data-animation="fadeInUp" data-delay=".6s">فقط تا امروز 50٪ تخفیف بگیرید</p>
+              <a href="shop.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">الان بخرید</a>
             </div>
-        </div>
-        <div class="single-hero-items set-bg" data-setbg="img/hero-2.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <span>کیف،بچه گانه</span>
-                        <h1>جمعه سیاه</h1>
-                        <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است.</p>
-                        <a href="#" class="primary-btn">خرید</a>
-                    </div>
-                </div>
-                <div class="off-card">
-                    <h2>تخفیف <span>50%</span></h2>
-                </div>
+          </div>
+          <div class="single-slider slider-bg" data-background="{% static "img/slider/slider_bg01.jpg" %}">
+            <div class="slider-content">
+              <h5 class="sub-title" data-animation="fadeInUp" data-delay=".2s">پیشنهاد ویژه !</h5>
+              <h2 class="title" data-animation="fadeInUp" data-delay=".4s">غذای ارگانیک</h2>
+              <p data-animation="fadeInUp" data-delay=".6s">فقط تا امروز 50٪ تخفیف بگیرید</p>
+              <a href="shop.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">الان بخرید</a>
             </div>
+          </div>
+          <div class="single-slider slider-bg" data-background="{% static "img/slider/slider_bg01.jpg" %}">
+            <div class="slider-content">
+              <h5 class="sub-title" data-animation="fadeInUp" data-delay=".2s">پیشنهاد ویژه !</h5>
+              <h2 class="title" data-animation="fadeInUp" data-delay=".4s">غذای ارگانیک</h2>
+              <p data-animation="fadeInUp" data-delay=".6s">فقط تا امروز 50٪ تخفیف بگیرید</p>
+              <a href="shop.html" class="btn rounded-btn" data-animation="fadeInUp" data-delay=".8s">الان بخرید</a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-3">
+        <div class="slider-banner-img mb-20">
+          <a href="shop.html"><img src="{% static "img/slider/slider_banner01.jpg" %}" alt=""></a>
+        </div>
+        <div class="slider-banner-img">
+          <a href="shop.html"><img src="{% static "img/slider/slider_banner02.jpg" %}" alt=""></a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="slider-banner-img">
+          <a href="shop.html"><img src="{% static "img/slider/slider_banner03.jpg" %}" alt=""></a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- category-area -->
+  <div class="container custom-container">
+    <div class="slider-category-wrap">
+      <div class="row category-active">
+        <div class="col-lg-2">
+          <div class="category-item active">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img01.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">آب میوه و نوشیدنی</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="category-item">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img02.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">سبزیجات</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="category-item">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img03.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">آجیل تازه</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="category-item">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img04.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">تمیز کردن</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="category-item">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img05.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">گوشت تازه</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="category-item">
+            <a href="shop.html" class="category-link"></a>
+            <div class="category-thumb">
+              <img src="{% static "img/product/category_img06.png" %}" alt="">
+            </div>
+            <div class="category-content">
+              <h6 class="title">پودرها</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- category-area-end -->
+
 </section>
-<!-- Hero Section End -->
+<!-- slider-area-end -->
 
-<!-- Banner Section Begin -->
-<div class="banner-section spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="single-banner">
-                    <img src="img/banner-1.jpg" alt="">
-                    <div class="inner-text">
-                        <h4>مردانه</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-banner">
-                    <img src="img/banner-2.jpg" alt="">
-                    <div class="inner-text">
-                        <h4>زنانه</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-banner">
-                    <img src="img/banner-3.jpg" alt="">
-                    <div class="inner-text">
-                        <h4>بچه گانه</h4>
-                    </div>
-                </div>
-            </div>
+<!-- discount-area -->
+<section class="discount-area pt-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-4 col-lg-6 col-md-8">
+        <div class="discount-item mb-20">
+          <div class="discount-thumb">
+            <img src="{% static "img/product/discount_img01.jpg" %}" alt="">
+          </div>
+          <div class="discount-content">
+            <span>غذای سالم</span>
+            <h4 class="title"><a href="shop.html">100 ارگانیک تا 35</a></h4>
+            <a href="shop.html" class="btn">الان بخرید</a>
+          </div>
         </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-8">
+        <div class="discount-item mb-20">
+          <div class="discount-thumb">
+            <img src="{% static "img/product/discount_img02.jpg" %}" alt="">
+          </div>
+          <div class="discount-content">
+            <span>غذای سالم</span>
+            <h4 class="title"><a href="shop.html">بسته بندی بهداشتی</a></h4>
+            <a href="shop.html" class="btn">الان بخرید</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-8">
+        <div class="discount-item style-two mb-20">
+          <div class="discount-thumb">
+            <img src="{% static "img/product/discount_img03.jpg" %}" alt="">
+          </div>
+          <div class="discount-content">
+            <span>غذای سالم</span>
+            <h4 class="title"><a href="shop.html">مورد علاقه نوزاد تا 15</a></h4>
+            <a href="shop.html" class="btn">الان بخرید</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+<!-- discount-area-end -->
+
+<!-- best-deal-area -->
+<section class="best-deal-area pt-60 pb-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9">
+        <div class="best-deal-top-wrap">
+          <div class="bd-section-title">
+            <h3 class="title">بهترین تخفیفات <span>این هفته!</span></h3>
+            <p>یک دستیار مجازی محصولات را از لیست شما جمع آوری می کند</p>
+          </div>
+          <div class="coming-time" data-countdown="2025/10/20"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row best-deal-active">
+      <div class="col-xl-3">
+        <div class="best-deal-item">
+          <div class="best-deal-thumb">
+            <a href="shop-details.html"><img src="{% static "img/product/best_deal_product01.png" %}" alt=""></a>
+          </div>
+          <div class="best-deal-content">
+            <div class="main-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="title"><a href="shop-details.html">گردو گانیک</a></h4>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+            <div class="icon"><a href="shop-details.html">+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="best-deal-item">
+          <div class="best-deal-thumb">
+            <a href="shop-details.html"><img src="{% static "img/product/best_deal_product02.png" %}" alt=""></a>
+          </div>
+          <div class="best-deal-content">
+            <div class="main-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="title"><a href="shop-details.html">آجیل تازه</a></h4>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+            <div class="icon"><a href="shop-details.html">+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="best-deal-item">
+          <div class="best-deal-thumb">
+            <a href="shop-details.html"><img src="{% static "img/product/best_deal_product03.png" %}" alt=""></a>
+          </div>
+          <div class="best-deal-content">
+            <div class="main-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="title"><a href="shop-details.html">آجیل تازه</a></h4>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+            <div class="icon"><a href="shop-details.html">+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="best-deal-item">
+          <div class="best-deal-thumb">
+            <a href="shop-details.html"><img src="{% static "img/product/best_deal_product04.png" %}" alt=""></a>
+          </div>
+          <div class="best-deal-content">
+            <div class="main-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="title"><a href="shop-details.html">آجیل تازه</a></h4>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+            <div class="icon"><a href="shop-details.html">+</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="best-deal-item">
+          <div class="best-deal-thumb">
+            <a href="shop-details.html"><img src="{% static "img/product/best_deal_product05.png" %}" alt=""></a>
+          </div>
+          <div class="best-deal-content">
+            <div class="main-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="title"><a href="shop-details.html">آجیل تازه</a></h4>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+            <div class="icon"><a href="shop-details.html">+</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- best-deal-area-end -->
+
+<!-- special-products-area -->
+<section class="special-products-area gray-bg pt-75 pb-60">
+  <div class="container">
+    <div class="row align-items-end mb-50">
+      <div class="col-md-8 col-sm-9">
+        <div class="section-title">
+          <span class="sub-title">فروشگاه عالی</span>
+          <h2 class="title">محصولات ویژه ما</h2>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-3">
+        <div class="section-btn text-right text-md-left">
+          <a href="shop.html" class="btn">نمایش همه</a>
+        </div>
+      </div>
+    </div>
+    <div class="special-products-wrap">
+      <div class="row">
+        <div class="col-3 d-none d-lg-block">
+          <div class="special-products-add">
+            <div class="sp-add-thumb">
+              <img src="{% static "img/product/special_products_add.jpg" %}" alt="">
+            </div>
+            <div class="sp-add-content">
+              <span class="sub-title">غذای سالم</span>
+              <h4 class="title">غذای <b>بچه ها</b></h4>
+              <p>پیشنهاد فوق العاده تا 50٪ تخفیف</p>
+              <a href="shop.html" class="btn rounded-btn">الان بخرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row justify-content-center">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch">جدید</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products01.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch discount">15%</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products02.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch discount">25%</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products03.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch">جدید</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products04.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch discount">25%</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products05.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch">جدید</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products06.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch discount">10%</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products07.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+              <div class="sp-product-item mb-20">
+                <div class="sp-product-thumb">
+                  <span class="batch discount">10%</span>
+                  <a href="shop-details.html"><img src="{% static "img/product/sp_products08.png" %}" alt=""></a>
+                </div>
+                <div class="sp-product-content">
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+                  <span class="product-status">موجود در انبار</span>
+                  <div class="sp-cart-wrap">
+                    <form action="#">
+                      <div class="cart-plus-minus">
+                        <input type="text" value="1">
+                      </div>
+                    </form>
+                  </div>
+                  <p>هر 1 کیلو - 1.500 تومان</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- special-products-area-end -->
+
+<!-- coupon-area -->
+<div class="coupon-area gray-bg pb-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="coupon-bg">
+          <div class="coupon-title">
+            <span>کد تخفیف</span>
+            <h3 class="title">کد تخفیف 3 هزار تومانی دریافت کنید</h3>
+          </div>
+          <div class="coupon-code-wrap">
+            <h5 class="code">ganic21abs</h5>
+            <img src="{% static "img/images/coupon_code.png" %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Banner Section End -->
+<!-- coupon-area-end -->
 
-<!-- Women Banner Section Begin -->
-<section class="women-banner spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
-                    <h2>زنانه</h2>
-                    <a href="#">جزئیات بیشتر</a>
-                </div>
-            </div>
-            <div class="col-lg-8 offset-lg-1">
-                <div class="filter-control">
-                    <ul>
-                        <li class="active">مجموعه ها</li>
-                        <li>کیف دستی</li>
-                        <li>کفش</li>
-                        <li>لوازم جانبی</li>
-                    </ul>
-                </div>
-                <div class="product-slider owl-carousel">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-1.jpg" alt="">
-                            <div class="sale">تخفیف</div>
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">لباس</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                14000 تومان
-                                <span>35000 تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-2.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">لباس</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                13000 تومان
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-3.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">لباس</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                34000 تومان
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-4.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">کیف</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                34000 تومان
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- best-sellers-area -->
+<section class="best-sellers-area pt-75">
+  <div class="container">
+    <div class="row align-items-end mb-50">
+      <div class="col-md-8 col-sm-9">
+        <div class="section-title">
+          <span class="sub-title">پرفروش ترین ها</span>
+          <h2 class="title">نمایش بهترین پیشنهادات</h2>
         </div>
+      </div>
+      <div class="col-md-4 col-sm-3">
+        <div class="section-btn text-right text-md-left">
+          <a href="shop.html" class="btn">نمایش همه</a>
+        </div>
+      </div>
     </div>
+    <div class="best-sellers-products">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <div class="sp-product-item mb-20">
+            <div class="sp-product-thumb">
+              <span class="batch">جدید</span>
+              <a href="shop-details.html"><img src="{% static "img/product/sp_products09.png" %}" alt=""></a>
+            </div>
+            <div class="sp-product-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+              <span class="product-status">موجود در انبار</span>
+              <div class="sp-cart-wrap">
+                <form action="#">
+                  <div class="cart-plus-minus">
+                    <input type="text" value="1">
+                  </div>
+                </form>
+              </div>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sp-product-item mb-20">
+            <div class="sp-product-thumb">
+              <span class="batch discount">15%</span>
+              <a href="shop-details.html"><img src="{% static "img/product/sp_products02.png" %}" alt=""></a>
+            </div>
+            <div class="sp-product-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+              <span class="product-status">موجود در انبار</span>
+              <div class="sp-cart-wrap">
+                <form action="#">
+                  <div class="cart-plus-minus">
+                    <input type="text" value="1">
+                  </div>
+                </form>
+              </div>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sp-product-item mb-20">
+            <div class="sp-product-thumb">
+              <span class="batch discount">25%</span>
+              <a href="shop-details.html"><img src="{% static "img/product/sp_products03.png" %}" alt=""></a>
+            </div>
+            <div class="sp-product-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+              <span class="product-status">موجود در انبار</span>
+              <div class="sp-cart-wrap">
+                <form action="#">
+                  <div class="cart-plus-minus">
+                    <input type="text" value="1">
+                  </div>
+                </form>
+              </div>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sp-product-item mb-20">
+            <div class="sp-product-thumb">
+              <span class="batch">new</span>
+              <a href="shop-details.html"><img src="{% static "img/product/sp_products04.png" %}" alt=""></a>
+            </div>
+            <div class="sp-product-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+              <span class="product-status">موجود در انبار</span>
+              <div class="sp-cart-wrap">
+                <form action="#">
+                  <div class="cart-plus-minus">
+                    <input type="text" value="1">
+                  </div>
+                </form>
+              </div>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sp-product-item mb-20">
+            <div class="sp-product-thumb">
+              <span class="batch discount">25%</span>
+              <a href="shop-details.html"><img src="{% static "img/product/sp_products05.png" %}" alt=""></a>
+            </div>
+            <div class="sp-product-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h6 class="title"><a href="shop-details.html">سوپ آماده گانیک</a></h6>
+              <span class="product-status">موجود در انبار</span>
+              <div class="sp-cart-wrap">
+                <form action="#">
+                  <div class="cart-plus-minus">
+                    <input type="text" value="1">
+                  </div>
+                </form>
+              </div>
+              <p>هر 1 کیلو - 1.500 تومان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Women Banner Section End -->
+<!-- best-sellers-area-end -->
 
-<!-- Deal Of The Week Section Begin-->
-<section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
-    <div class="container">
-        <div class="col-lg-6 text-center">
-            <div class="section-title">
-                <h2>تخفیف هفته</h2>
-                <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است.</p>
-                <div class="product-price">
-                    35000 تومان
-                    <span>/ کیف دستی</span>
-                </div>
-            </div>
-            <div class="countdown-timer" id="countdown">
-                <div class="cd-item">
-                    <span>56</span>
-                    <p>روز</p>
-                </div>
-                <div class="cd-item">
-                    <span>12</span>
-                    <p>ساعت</p>
-                </div>
-                <div class="cd-item">
-                    <span>40</span>
-                    <p>دقیقه</p>
-                </div>
-                <div class="cd-item">
-                    <span>52</span>
-                    <p>ثانیه</p>
-                </div>
-            </div>
-            <a href="#" class="primary-btn">خرید</a>
+<!-- discount-area -->
+<section class="discount-style-two pt-60 pb-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="discount-item-two">
+          <div class="discount-thumb">
+            <img src="{% static "img/product/s_discount_img01.jpg" %}" alt="">
+          </div>
+          <div class="discount-content">
+            <span>غذای سالم</span>
+            <h4 class="title"><a href="shop.html">مزرعه ارگانیک برای گانیک</a></h4>
+            <p>پیشنهاد فوق العاده تا 50٪ تخفیف</p>
+            <a href="shop.html" class="btn rounded-btn">الان بخرید</a>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="discount-item-two">
+          <div class="discount-thumb">
+            <img src="{% static "img/product/s_discount_img02.jpg" %}" alt="">
+          </div>
+          <div class="discount-content">
+            <span>غذای سالم</span>
+            <h4 class="title"><a href="shop.html">مزرعه ارگانیک برای گانیک</a></h4>
+            <p>پیشنهاد فوق العاده تا 50٪ تخفیف</p>
+            <a href="shop.html" class="btn rounded-btn">الان بخرید</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-<!-- Deal Of The Week Section End -->
-
-<!-- Man Banner Section Begin -->
-<section class="man-banner spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="filter-control">
-                    <ul>
-                        <li class="active">مجموعه ها</li>
-                        <li>کیف دستی</li>
-                        <li>کفش</li>
-                        <li>لوازم جانبی</li>
-                    </ul>
-                </div>
-                <div class="product-slider owl-carousel">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/man-1.jpg" alt="">
-                            <div class="sale">تخفیف</div>
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">کیف</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                14000 تومان
-                                <span>35000 تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/man-2.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">کفش</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                13000 تومان
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/man-3.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">لباس</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                34000 تومان
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/man-4.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ مشاهده سریع</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">لباس</div>
-                            <a href="#">
-                                <h5>نام محصول</h5>
-                            </a>
-                            <div class="product-price">
-                                34000 تومان
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 offset-lg-1">
-                <div class="product-large set-bg m-large" data-setbg="img/products/man-large.jpg">
-                    <h2>مردانه</h2>
-                    <a href="#">جزئیات بیشتر</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Man Banner Section End -->
-
-<!-- Instagram Section Begin -->
-<div class="instagram-photo">
-    <div class="insta-item set-bg" data-setbg="img/insta-1.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-2.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-3.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-4.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-5.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-6.jpg">
-        <div class="inside-text">
-            <i class="ti-instagram"></i>
-            <h5><a href="#">مشاهده مجموعه</a></h5>
-        </div>
-    </div>
-</div>
-<!-- Instagram Section End -->
-
-<!-- Latest Blog Section Begin -->
-<section class="latest-blog spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>پست های وبلاگ</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-blog">
-                    <img src="img/latest-1.jpg" alt="">
-                    <div class="latest-text">
-                        <div class="tag-list">
-                            <div class="tag-item">
-                                <i class="fa fa-calendar-o"></i> 7 مهر 1400
-                            </div>
-                            <div class="tag-item">
-                                <i class="fa fa-comment-o"></i> 5
-                            </div>
-                        </div>
-                        <a href="#">
-                            <h4>عنوان مطلب وبلاگ</h4>
-                        </a>
-                        <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-blog">
-                    <img src="img/latest-2.jpg" alt="">
-                    <div class="latest-text">
-                        <div class="tag-list">
-                            <div class="tag-item">
-                                <i class="fa fa-calendar-o"></i> 7 مهر 1400
-                            </div>
-                            <div class="tag-item">
-                                <i class="fa fa-comment-o"></i> 5
-                            </div>
-                        </div>
-                        <a href="#">
-                            <h4>عنوان مطلب وبلاگ</h4>
-                        </a>
-                        <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-blog">
-                    <img src="img/latest-3.jpg" alt="">
-                    <div class="latest-text">
-                        <div class="tag-list">
-                            <div class="tag-item">
-                                <i class="fa fa-calendar-o"></i> 7 مهر 1400
-                            </div>
-                            <div class="tag-item">
-                                <i class="fa fa-comment-o"></i> 5
-                            </div>
-                        </div>
-                        <a href="#">
-                            <h4>عنوان مطلب وبلاگ</h4>
-                        </a>
-                        <p>این یک قالب فروشگاهی آماده جهت استفاده طراحان وب می باشد و تمام محصولات موجود در آن بعنوان نمونه طراحی است. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="benefit-items">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="img/icon-1.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>ارسال رایگان</h6>
-                            <p>برای سفارش بالای 100000 تومان</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="img/icon-2.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>تحویل به موقع</h6>
-                            <p>ارسال به سراسر کشور</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="img/icon-1.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>پرداخت امن</h6>
-                            <p>100% پرداخت امن</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Latest Blog Section End -->
-
-<!-- Partner Logo Section Begin -->
-<div class="partner-logo">
-    <div class="container">
-        <div class="logo-carousel owl-carousel">
-            <div class="logo-item">
-                <div class="tablecell-inner">
-                    <img src="img/logo-carousel/logo-1.png" alt="">
-                </div>
-            </div>
-            <div class="logo-item">
-                <div class="tablecell-inner">
-                    <img src="img/logo-carousel/logo-2.png" alt="">
-                </div>
-            </div>
-            <div class="logo-item">
-                <div class="tablecell-inner">
-                    <img src="img/logo-carousel/logo-3.png" alt="">
-                </div>
-            </div>
-            <div class="logo-item">
-                <div class="tablecell-inner">
-                    <img src="img/logo-carousel/logo-4.png" alt="">
-                </div>
-            </div>
-            <div class="logo-item">
-                <div class="tablecell-inner">
-                    <img src="img/logo-carousel/logo-5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Partner Logo Section End -->
+<!-- discount-area-end -->
 
 {% endblock %}
