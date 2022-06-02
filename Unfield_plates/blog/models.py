@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth import models as auth_model
 from django.utils import timezone
+from django.urls import reverse
+
 
 # Create your models here.
 
